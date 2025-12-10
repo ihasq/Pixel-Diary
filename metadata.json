@@ -1,0 +1,5 @@
+{
+  "name": "PixelGrid 4x4 AI",
+  "description": "A responsive, AI-powered 4x4 pixel art editor allowing arbitrary RGB color selection and smart generation.",
+  "requestFramePermissions": []
+}
