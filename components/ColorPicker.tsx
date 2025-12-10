@@ -1,23 +1,9 @@
 import React from 'react';
-import { Icon } from './Icon';
 
 interface ColorPickerProps {
   selectedColor: string;
   onChange: (color: string) => void;
 }
-
-const PRESETS = [
-  '#ef4444', // Red
-  '#f97316', // Orange
-  '#eab308', // Yellow
-  '#22c55e', // Green
-  '#3b82f6', // Blue
-  '#a855f7', // Purple
-  '#ec4899', // Pink
-  '#ffffff', // White
-  '#9ca3af', // Gray
-  '#000000', // Black
-];
 
 export const ColorPicker: React.FC<ColorPickerProps> = ({ selectedColor, onChange }) => {
   return (
@@ -33,20 +19,6 @@ export const ColorPicker: React.FC<ColorPickerProps> = ({ selectedColor, onChang
           />
           <span className="text-sm font-mono text-gray-700 uppercase">{selectedColor}</span>
         </div>
-      </div>
-
-      <div className="flex flex-wrap gap-2 justify-center sm:justify-start">
-        {PRESETS.map((color) => (
-          <button
-            key={color}
-            onClick={() => onChange(color)}
-            className={`w-8 h-8 rounded-full border-2 transition-all duration-200 ${
-              selectedColor === color ? 'border-gray-900 scale-110 shadow-lg' : 'border-transparent hover:scale-105'
-            }`}
-            style={{ backgroundColor: color }}
-            aria-label={`Select color ${color}`}
-          />
-        ))}
       </div>
     </div>
   );

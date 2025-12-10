@@ -138,7 +138,7 @@ const App: React.FC = () => {
     >
       <header className="mb-8 text-center space-y-2">
         <h1 className="text-3xl sm:text-4xl font-black bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 tracking-tight">
-          4x4 Pixel Diary
+          Pixel Diary
         </h1>
         <p className="text-gray-600 text-sm">今の気分を16マスであらわすなら？</p>
       </header>
@@ -181,7 +181,7 @@ const App: React.FC = () => {
             className="group flex items-center justify-center gap-3 px-6 py-4 bg-white hover:bg-gray-50 text-gray-900 rounded-2xl border border-gray-300 hover:border-gray-400 font-bold transition-all shadow-md active:scale-[0.99]"
           >
             <Icon name="upload" className="group-hover:translate-y-0.5 transition-transform" />
-            <span>だれかと交換</span>
+            <span>だれかと交換する</span>
           </button>
 
         </div>
